@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:hint="Title"
+        android:singleLine="true"
+        android:maxLength="64"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_buttons"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/edit_tag"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Set a Tag"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_select"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_select_notebook"/>
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_save_note"/>
+            </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_title"
+        android:layout_above="@id/layout_buttons"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="top"
+        android:hint="Content"
+        android:maxLength="1024"
+        />
+</RelativeLayout>
+

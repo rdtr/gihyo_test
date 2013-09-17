@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_list">
+        <item>@string/label_create_note</item>
+        <item>@string/label_create_note_with_resources</item>
+    </string-array>
+</resources>
