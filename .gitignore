@@ -12,6 +12,9 @@
 bin/
 gen/
 
+# library files
+lib/
+
 # Global/Eclipse.gitignore
 *.pydevproject
 .project
@@ -40,6 +43,8 @@ local.properties
 
 # Local configuration file (sdk path, etc)
 local.properties
+build.xml
+proguard-project.txt
 
 # Eclipse project files
 .classpath
