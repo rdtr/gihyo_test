@@ -142,6 +142,9 @@ public class MainActivity extends Activity implements MenuFragment.OnMenuItemSel
             case 1:
                 ft.replace(R.id.fragment_container, new SpecialNoteFragment(), "SpecialNote");
                 break;
+            case 2:
+                ft.replace(R.id.fragment_container, new SearchNoteFragment(), "SearchNote");
+                break;
             default:
                 ;
         }

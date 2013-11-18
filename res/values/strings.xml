@@ -6,17 +6,22 @@
     <string name="text_loading">Loading...</string>
 
     <string name="label_create_note">Create a new note</string>
-    <string name="label_create_note_with_resources">Create a new note with resources</string>
+    <string name="label_create_note_with_attributes">Create a new note with attributes</string>
     <string name="label_select_image">Add an image file</string>
-    <string name="label_select_notebook">Select notebook</string>
+    <string name="label_select_notebook">Select a notebook</string>
+    <string name="label_search_note">Search notes</string>
+    <string name="label_contentclass_note">Set Read-Only</string>
     <string name="label_save_note">Save</string>
     <string name="label_ok">OK</string>
+    <string name="label_will_load">Read more</string>
 
     <string name="note_saved">saved successfully</string>
+    <string name="notes_searched">Searched successfully</string>
     <string name="error_empty_content">Note title and content cannot be empty</string>
     <string name="error_listing_notebooks">Error listing notebooks</string>
     <string name="error_creating_notestore">Error creating notestore</string>
     <string name="error_attaching_image">Error attaching an image to note</string>
     <string name="error_saving_note">Error saving note</string>
+    <string name="error_searching_notes">Error searching notes</string>
 
 </resources>

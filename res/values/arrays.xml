@@ -2,6 +2,7 @@
 <resources>
     <string-array name="menu_list">
         <item>@string/label_create_note</item>
-        <item>@string/label_create_note_with_resources</item>
+        <item>@string/label_create_note_with_attributes</item>
+        <item>@string/label_search_note</item>
     </string-array>
 </resources>

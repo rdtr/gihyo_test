@@ -42,7 +42,6 @@ public class SimpleNoteFragment extends Fragment implements ListNotebookDialogFr
     private String[] guids;
     private String guid;
     private static final String LOGTAG = "SimpleNoteFragment";
-    private int selected;
 
     // ギャラリーからの結果取得用
     private String mFilename, mFilePath, mMimeType;
@@ -137,12 +136,26 @@ public class SimpleNoteFragment extends Fragment implements ListNotebookDialogFr
             @Override
             public void onClick(View v) {
                 String title = mTitle.getText().toString();
-                String content = EvernoteUtil.NOTE_PREFIX + mContent.getText().toString();
+                String content = mContent.getText().toString();
+
                 if (TextUtils.isEmpty(title) || TextUtils.isEmpty(content)) {
                     Toast.makeText(getActivity(), R.string.error_empty_content, Toast.LENGTH_LONG).show();
                 } else {
                     Note note = new Note();
                     note.setTitle(title);
+
+                    if(content.contains("\n")) {
+                        String[] contents = content.split("\n");
+                        content = "";
+                        for(int i = 0; i < contents.length; i++) {
+                            if(contents[i].equals("")){
+                                contents[i] = "<br />";
+                            }
+                            contents[i] = "<div>" + contents[i] + "</div>";
+                            content += contents[i];
+                        }
+                    }
+                    content = EvernoteUtil.NOTE_PREFIX + content;
 
                     // ユーザがnotebookを選択していた場合はguidも加える
                     if(guid != null) {
